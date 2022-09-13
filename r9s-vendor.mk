@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2021 The LineageOS Project
+# Copyright (C) 2021-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -81,7 +81,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/r9s/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/oppo/r9s/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oppo/r9s/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
-    vendor/oppo/r9s/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/oppo/r9s/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/oppo/r9s/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
     vendor/oppo/r9s/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
@@ -128,7 +127,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/r9s/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/oppo/r9s/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/oppo/r9s/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    vendor/oppo/r9s/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/oppo/r9s/proprietary/vendor/lib/libaudiodevarb.so:system/vendor/lib/libaudiodevarb.so \
     vendor/oppo/r9s/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/oppo/r9s/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
@@ -240,7 +238,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/r9s/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
     vendor/oppo/r9s/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
     vendor/oppo/r9s/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
-    vendor/oppo/r9s/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/oppo/r9s/proprietary/vendor/lib64/libaudiodevarb.so:system/vendor/lib64/libaudiodevarb.so \
     vendor/oppo/r9s/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
     vendor/oppo/r9s/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
@@ -361,7 +358,8 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     qti-telephony-common \
     rcsimssettings \
-    tcmclient
+    tcmclient \
+    qti-vzw-ims-internal
 PRODUCT_COPY_FILES += \
     vendor/oppo/r9s/proprietary/bin/alipayservice:system/bin/alipayservice \
     vendor/oppo/r9s/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -681,6 +679,4 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/r9s/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/oppo/r9s/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
     vendor/oppo/r9s/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
-    vendor/oppo/r9s/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
-    vendor/oppo/r9s/proprietary/lib/hw/audio.primary.msm8953.so:system/lib/hw/audio.primary.msm8953.so \
-    vendor/oppo/r9s/proprietary/lib64/hw/audio.primary.msm8953.so:system/lib64/hw/audio.primary.msm8953.so
+    vendor/oppo/r9s/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so
